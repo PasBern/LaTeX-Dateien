@@ -1,0 +1,706 @@
+\documentclass[11pt,compress,handout,blackandwhite]{beamer}
+
+\usepackage{beamerthemesplit}
+\usepackage[ansinew]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{xcolor}
+\usepackage{fancybox}
+
+\definecolor{links}{HTML}{2A1B81}
+%%Farbe von Hyperlinks ändern
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+      
+
+
+
+%%Pakete für mathematische Symbole und Umgebungen
+\usepackage{amsmath,amsfonts,amssymb}
+
+%%Paket für Bilder
+\usepackage{epsfig}
+
+\usepackage{marvosym}
+
+\usepackage{textcomp}
+
+\usepackage{hyperref}
+
+\definecolor{ubuntu}{rgb}{0.99,0.5,0.2}
+\definecolor{dark-violet}{rgb}{0.40,0,0.48}
+\definecolor{dunkelgrau.65}{gray}{0.35}
+\definecolor{dunkelgrau.60}{gray}{0.40}
+\definecolor{hellgrau.35}{gray}{0.65}
+
+
+\usepackage{pifont}
+
+%\renewcommand*{labelitemi}{\Circsteel}
+%\renewcommand*{labelitemii}{\textbullet}
+
+
+
+
+\title{Paketverwaltung unter Ubuntu/Kubuntu}
+\author{Pascal Bernhard}
+\institute[BeLUG]{Berliner Linux User Group}
+\date{\today}
+
+\titlegraphic{\includegraphics[width=3.8cm,height=0.9cm]{Kubuntu.png}}
+\logo{\pgfimage[width=1.9cm,height=0.6cm]{belug-ev.png}}
+
+\begin{document}
+
+
+%% Folie 1 (Titelfolie)
+\frame{\titlepage}
+
+
+\section{Softwareverwaltung unter Linux}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 2
+
+
+\frame
+{
+  \frametitle{Was bedeutet Paketmanagement?}
+
+    \begin{columns}[c]
+	\column[c]{6cm}
+	  
+
+
+
+	  \begin{itemize}
+	    \item Linux-Software ist in Paketen organisiert
+	      \begin{itemize}
+		  \item [\textbullet] \textcolor{dunkelgrau.60}{Programme (z.B. Firefox) bestehen aus einer Mehrzahl an Paketen} 
+		  \newline
+		  \item [\textbullet] \textcolor{dunkelgrau.60}{Pakete setzen sich aus mehreren Dateien zusammen}
+		\end{itemize}
+
+	\vspace{0.5cm}
+
+	    \item Pakete sind häufig voneinander abhängig
+
+	      \begin{itemize}
+		\item [\textbullet] \textcolor{dunkelgrau.60}{Programme teilen sich Pakete}
+	      \end{itemize}
+
+	  \end{itemize}
+
+
+	\column{4cm}
+
+      \end{columns}
+
+	
+
+}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 3
+
+
+
+\frame
+{
+  \frametitle{Wie installiere ich Programme?}
+
+
+    \begin{columns}[c]
+	\column[c]{6cm}
+	  
+
+
+	\begin{itemize}  
+	  \item Softwareinstallation erfolgt über das Paketmanagement-Tool \textsl{\textcolor{dark-violet}{Apt}} (Ubuntu)
+	    
+	\vspace{0.5cm}
+
+	  \item \textsl{\textcolor{dark-violet}{Ubuntu Software-Center}}
+
+	\vspace{0.5cm}
+
+	  \item Kommandozeilentool: \textsl{\textcolor{dark-violet}{Apt}}
+
+	\vspace{0.5cm}
+  
+	  \item GUI für Apt: \textsl{\textcolor{dark-violet}{Synaptic}}
+	\end{itemize}
+
+	\column{4cm}
+      \end{columns}
+
+}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 4
+
+
+
+\begin{frame}
+
+  \frametitle{Was sind Repositories? Wo kommen die Pakete her?}
+	
+
+    \begin{columns}[c]
+	\column[c]{6cm}
+
+      \begin{itemize}
+	\item Repositories sind Distributions-spezifisch
+    
+	  \begin{itemize}
+	    \item [\textbullet] \textcolor{dunkelgrau.60}{\textbf{Repository bzw. Paketquelle} \textsl{Softwarearchiv mit Paketen speziell für eine Ubuntu-Version}}
+
+	    \item [\textbullet] \textbf{\textcolor{ubuntu}{Bitte nur für Ubuntu gedachte Paketquellen verwenden!}}
+	  \end{itemize}
+
+
+	\item Konfiguration der Paketquellen in \framebox{\texttt{\textcolor{dark-violet}{/etc/apt/sources.list}}}
+      \end{itemize}
+
+
+	\column{4cm}
+      \end{columns}
+
+\end{frame}
+	
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 5
+
+
+
+\begin{frame}
+
+  \frametitle{Was sind Repositories? Wo kommen die Pakete her?}
+	
+
+    \begin{columns}[c]
+	\column[c]{6cm}
+
+      \begin{itemize}
+	\item Repository-Bereiche für unterschiedlich klassifizierte Pakete unter Ubuntu/Kubuntu
+
+	  \begin{enumerate}
+	    \item \textcolor{blue}{main}: offiziell unterstützte Pakete mit freier Lizenz
+	    \item \textcolor{green}{restricted}: offiziell unterstützte Pakete, mit Komponenten unter einer nicht-freien Lizenz 
+	    \item \textcolor{orange}{universe}: von der Linux-Community unterstützte Pakete unter freier Lizenz
+	    \item \textcolor{magenta}{multiverse}: Software mit nicht-freien Komponenten, die von der Linux-Community bereitgestellt wird
+	  \end{enumerate}
+	  
+
+      \end{itemize}
+
+
+	\column{4cm}
+      \end{columns}
+
+\end{frame}
+
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 6
+
+
+\begin{frame}[containsverbatim]
+
+  \frametitle{Neue Repositories hinzufügen}
+	
+
+      \begin{itemize}
+	\item \textbf{Repository-Bereich für Bug-Fixes}
+
+	
+	\begin{itemize}
+	    \item [\textbullet] \textcolor{dunkelgrau.65}{\texttt{deb http://de.archive.ubuntu.com/ubuntu/ quantal-updates main restricted}}
+	    \item [\textbullet] \textcolor{hellgrau.35}{\texttt{\#\#deb-src http://de.archive.ubuntu.com/ubuntu/ quantal-updates main restricted}}
+	\end{itemize}
+
+      \end{itemize}
+
+
+\end{frame}
+
+
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 7
+
+
+\begin{frame}[containsverbatim]
+
+  \frametitle{Neue Repositories hinzufügen}
+	
+
+      \begin{itemize}
+	\item \textbf{Repository-Bereich \textcolor{orange}{universe}}
+
+	\begin{itemize}
+	    \item [\textbullet] \textcolor{dunkelgrau.65}{\texttt{deb http://de.archive.ubuntu.com/ubuntu/ quantal universe}}
+	    \item [\textbullet] \textcolor{hellgrau.35}{\texttt{\#\#deb-src http://de.archive.ubuntu.com/ubuntu/ quantal universe}}
+	    \item [\textbullet] \textcolor{dunkelgrau.65}{\texttt{deb http://de.archive.ubuntu.com/ubuntu/ quantal-updates universe}}
+	    \item [\textbullet] \textcolor{hellgrau.35}{\texttt{\#\#deb-src http://de.archive.ubuntu.com/ubuntu/ quantal-updates universe}}
+	\end{itemize}
+
+      \end{itemize}
+
+
+\end{frame}
+
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 8
+
+
+\begin{frame}[containsverbatim]
+
+  \frametitle{Neue Repositories hinzufügen}
+	
+
+      \begin{itemize}
+	\item \textbf{Repository-Bereich \textcolor{magenta}{multiverse}}
+
+	\begin{itemize}
+	    \item [\textbullet] \textcolor{dunkelgrau.65}{\texttt{deb http://de.archive.ubuntu.com/ubuntu/ quantal multiverse}}
+	    \item [\textbullet] \textcolor{hellgrau.35}{\texttt{\#\#deb-src http://de.archive.ubuntu.com/ubuntu/ quantal multiverse}}
+	    \item [\textbullet] \textcolor{dunkelgrau.65}{\texttt{deb http://de.archive.ubuntu.com/ubuntu/ quantal-updates multiverse}}
+	    \item [\textbullet] \textcolor{hellgrau.35}{\texttt{\#\#deb-src http://de.archive.ubuntu.com/ubuntu/ quantal-updates multiverse}}
+	\end{itemize}
+
+
+      \end{itemize}
+
+
+
+\end{frame}
+
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 9
+
+
+\begin{frame}[containsverbatim]
+
+  \frametitle{Neue Repositories hinzufügen}
+	
+
+      \begin{itemize}
+	\item \textbf{Sicherheitsupdates für \textcolor{orange}{universe} \& \textcolor{magenta}{multiverse}}
+
+	\begin{itemize}
+	    \item [\textbullet] \textcolor{dunkelgrau.65}{\texttt{deb http://security.ubuntu.com/ubuntu quantal-security universe}}
+	    \item [\textbullet] \textcolor{hellgrau.35}{\texttt{\#\#deb-src http://security.ubuntu.com/ubuntu quantal-security universe}}
+	    \item [\textbullet] \textcolor{dunkelgrau.65}{\texttt{deb http://security.ubuntu.com/ubuntu quantal-security multiverse}}
+	    \item [\textbullet] \textcolor{hellgrau.35}{\texttt{\#\#deb-src http://security.ubuntu.com/ubuntu quantal-security multiverse}}
+	\end{itemize}
+
+
+
+
+
+
+
+      \end{itemize}
+
+
+
+\end{frame}
+
+
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 10
+
+
+\begin{frame}[containsverbatim]
+
+  \frametitle{Neue Repositories hinzufügen}
+	
+
+
+      \begin{itemize}
+	\item \textbf{Repository-Bereich für Nicht-Ubuntu - Software}
+
+	
+	\begin{itemize}
+	    \item [\textbullet] \textcolor{dunkelgrau.65}{\texttt{deb http://archive.canonical.com/ubuntu quantal partner}}
+	    \item [\textbullet] \textcolor{hellgrau.35}{\texttt{\#\#deb-src http://archive.canonical.com/ubuntu quantal partner}}
+	\end{itemize}
+
+
+      \end{itemize}
+
+
+
+\end{frame}
+
+	
+%--------------------------------------------------------------------------------------%
+%%%Folie 11	
+	
+
+
+\frame
+{
+  \frametitle{Wie halte ich mein Ubuntu auf dem aktuellen Stand?}
+  
+
+    \begin{columns}[c]
+	\column[c]{6cm}
+
+
+	  \begin{itemize}
+	    \item Updates/Upgrades werden zentral über das Paketmanagement gemacht für alle Pakete
+
+	    \item Update auf der Kommandozeile mit:\\
+	    \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get update}}} \\
+	    \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get --dry-run upgrade}}} \\
+	    \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get upgrade}}}
+
+	
+	    \item Update über Synaptic
+	  \end{itemize}
+
+
+
+	\column{4cm}
+      \end{columns}
+}
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 12
+
+
+
+\begin{frame}[containsverbatim]
+\frametitle{Wie installiere \& entferne ich Pakete unter Ubuntu?}
+
+  \begin{itemize}
+   \item Update der Paketquellen: \\
+   \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get update}}}
+
+   \vspace{1.0cm}
+
+   \item Suche nach Paketen: \Ovalbox{\texttt{\textcolor{ubuntu}{(sudo) apt-cache search PAKETNAME}}}
+   
+   \vspace{1.0cm}
+
+   \item Installation von Paketen: \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get install PAKETNAME1 PAKETNAME2}}}
+  \end{itemize}
+
+\end{frame}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 12
+
+
+
+\begin{frame}[containsverbatim]
+\frametitle{Wie installiere \& entferne ich Pakete unter Ubuntu?}
+
+  \begin{itemize}
+   \item Installierte Pakete auflisten: \\
+   \Ovalbox{\texttt{\textcolor{ubuntu}{dpkg -l | grep PAKETNAME}}}
+
+   \vspace{1.0cm}
+
+   \item Entfernen, aber Einstellungen bleiben erhalten: \\
+   \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get remove PAKETNAME}}}
+   
+   \vspace{1.0cm}
+
+   \item Vollständiges Entfernen samt Einstellungen: \\
+   \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get purge PAKETNAME}}}
+  \end{itemize}
+
+\end{frame}
+
+
+
+%--------------------------------------------------------------------------------------%
+
+
+%%%Folie 14
+
+
+
+\begin{frame}[containsverbatim]
+\frametitle{Wie installiere \& entferne ich Pakete unter Ubuntu?}
+
+  \begin{itemize}
+   \item Bereinigung des lokalen Caches von APT: \\
+   \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get clean}}} \\
+   \textsl{\textcolor{dunkelgrau.65}{Aus dem lokalen Cache werden alle heruntergeladene Pakete gelöscht}}
+
+   \vspace{0.2cm}
+
+   \item \textquotedblleft Intelligente\textquotedblright Bereinigung des lokalen Caches: \\
+   \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get autoclean}}} \\
+   \textsl{\textcolor{dunkelgrau.65}{Es werden nur Dateien gelöscht, die nicht mehr heruntergeladen werden und nutzlos sind}}
+   
+   \vspace{0.2cm}
+
+   \item Entfernen von nicht mehr benötigten Paketen: \\
+   \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get autoremove}}} \\
+   \textsl{\textcolor{dunkelgrau.65}{Es werden Pakete entfernt, die automatisch installiert wurden, um Abhängigkeiten zu erfüllen, jedoch nicht mehr gebraucht werden}}
+  \end{itemize}
+
+\end{frame}
+
+
+
+%--------------------------------------------------------------------------------------%
+
+
+
+
+
+
+%%%Folie 13
+
+
+
+
+\begin{frame}[containsverbatim]
+\frametitle{PPAs: Personal Package Archives}
+
+
+  \begin{columns}[c]
+	\column[c]{6cm}
+	  
+
+	  \begin{itemize}
+	    \item nicht-offizielle Repositories - keine Unterstützung durch Ubuntu/Cannonical
+
+	  \vspace{0.5cm}
+
+	    \item Beispiel 1: \textcolor{dark-violet}{Ubuntu Tweak}
+	   \end{itemize}
+
+
+	      \Ovalbox{\texttt{\textcolor{ubuntu}{sudo add-apt-repository ppa:tualatrix/ppa}}}
+
+
+	      \Ovalbox{\texttt{\textcolor{ubuntu}{sudo add-get update}}}
+
+
+	      \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get install ubuntu-tweak}}}
+
+
+
+	\column{4cm}
+
+  \end{columns}
+
+\end{frame}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 14
+
+
+
+
+\begin{frame}[containsverbatim]
+\frametitle{PPAs: Personal Package Archives}
+
+
+  \begin{columns}[c]
+	\column[c]{6cm}
+	  
+
+	  \begin{itemize}
+
+	    \item Beispiel 2: \textcolor{dark-violet}{Java von Oracle}
+	   \end{itemize}
+
+
+	      \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get purge openjdk*}}}
+
+	      \Ovalbox{\texttt{\textcolor{ubuntu}{sudo add-apt-repository ppa:eugenesan/java}}}
+
+	      \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get update}}}
+
+	      \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get install oracle-java7-installer}}}
+
+
+
+	\column{4cm}
+
+  \end{columns}
+
+\end{frame}
+
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 15
+
+
+
+%%\begin{frame}[containsverbatim]
+%%\frametitle{PPAs: Personal Package Archives}
+
+
+%%  \begin{columns}[c]
+%%	\column[c]{6cm}
+	  
+
+%%	  \begin{itemize}
+
+%%	    \item Beispiel 3: \textcolor{dark-violet}{Codecs für verschlüsselte DVDs}
+%%	   \end{itemize}
+
+	     
+%%	      \Ovalbox{\texttt{\textcolor{ubuntu}{sudo wget http://www.medibuntu.org/sources.list.d/\textdollar(lsb_release -cs).list --output-document=/etc/apt/sources.list.d/medibuntu.list}}}
+
+%%	      \Ovalbox{\texttt{\textcolor{ubuntu}{wget -q "http://packages.medibuntu.org/medibuntu-key.gpg" -O- | sudo apt-key add -}}}	                                                                                                                               
+
+
+
+%%	      \Ovalbox{\texttt{\textcolor{ubuntu}{sudo add-get update}}}
+
+
+%%	      \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get update \&\& sudo apt-get install w32codecs libdvdcss2}}}
+
+
+%%	      \Ovalbox{\texttt{\textcolor{ubuntu}{sudo apt-get update \&\& sudo apt-get install w64codecs libdvdcss2}}}
+
+
+
+%%	\column{4cm}
+
+%%  \end{columns}
+
+%%\end{frame}
+
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 16
+
+
+\begin{frame}
+
+\frametitle{Begriffserklärung}
+	  
+      \begin{itemize}
+	\item \textbf{Repository:} \textcolor{dunkelgrau.60}{Softwarearchiv mit Paketen speziell für eine Linux-Distribution. Das Paketmanagement kennt nur Pakete aus Repositories die in der Datei \texttt{\textcolor{dark-violet}{/etc/apt/sources.list}} eingetragen sind oder als eigene Liste mit der Endung \textquotedblleft.list\textquotedblright im Verzeichnis \texttt{\textcolor{blue}{/etc/apt/sources.d}} !}
+
+      \vspace{1.0cm}
+
+	\item \textbf{Paketabhängigkeiten:} \textcolor{dunkelgrau.60}{Programme setzen jeweils bestimmte Pakete voraus. Die Paketverwaltung hat die Aufgabe diese Abhängigkeiten zu managen. Werden die Paketabhängigkeiten verletzt, weil zwei unterschiedliche Programme ein bestimmtes Paket in jeweils anderer Version benötigen, wird eines dieser Programme entweder entfernt, bzw. dieses erst gar nicht installiert.}
+      \end{itemize}
+
+\end{frame}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 16
+
+\begin{frame}
+
+\frametitle{Begriffserklärung}
+	  
+      \begin{itemize}
+	\item \textbf{proprietäre Software/Pakete:} \textcolor{dunkelgrau.60}{Proprietäre Software/Pakete stehen nicht unter einen freien Lizenz (z.B. GPL, LGPL, Afero-Lizenz, etc.) und können dementsprechend nicht wie freie Software im Quellcode eingesehen, verändert und weitergegeben werden oder dies ist nur sehr eingeschränkt möglich.}
+
+	\vspace{0.5cm}
+
+	\item Weitere Informationen:
+
+	  \begin{itemize}
+	    \item [\textbullet] \textsl{Erläuterung freier Software:} \url{https://www.gnu.org/philosophy/categories.html.en}{}
+	    \item [\textbullet] \textsl{Softwarelizenzen:} \\
+	    \url{http://www.ifross.org/lizenz-center}{}
+	  \end{itemize}
+	          
+
+      \end{itemize}
+
+
+
+\end{frame}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 17
+
+
+\begin{frame}[containsverbatim]
+
+\frametitle{Begriffserklärung}
+      
+	  \begin{itemize}
+	    \item Weitere Informationen:
+
+	      \begin{itemize}
+		\item [\textbullet] \textsl{Konzept der Vier Freiheiten:} \url{https://fsfe.org/about/basics/freesoftware.de.html}{}
+	      \end{itemize}
+
+	    \item Links zu Paketmanagement unter Ubuntu:
+
+	      \begin{itemize}
+		\item [\textbullet] \textsl{Hilfe zum Umgang mit Repositories:}\\	    \url{https://help.ubuntu.com/community/Repositories/CommandLine}{}
+		\item [\textbullet] \textsl{Anleitung zu Paketen unter Ubuntu allgemein:}\\
+		\url{http://ubuntuguide.org/wiki/Ubuntu:quantal#Aptitude}{}\\
+		\url{http://wiki.ubuntuusers.de/Paketverwaltung}{}
+	      \end{itemize}
+
+
+	  \end{itemize}
+
+	 
+\end{frame}
+
+
+
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 18
+
+
+\begin{frame}[containsverbatim]
+
+\frametitle{Links}
+      
+	  \begin{itemize}
+	    \item Weitere Anleitungen zur Installation von Software:
+
+	      \begin{itemize}
+		\item [\textbullet] \textsl{Unixmen:}\\
+		\url{http://www.unixmen.com/201204-top-things-to-do-after-installing-ubuntu-2/}{}
+
+		\item [\textbullet] \textsl{LinuxCandy:}\\	  
+		\url{http://www.linuxcandy.com/2012/10/12-things-to-do-after-installing-ubuntu-12-10.html}{}
+
+		\item [\textbullet] \textsl{Upubuntu:}\\
+		\url{http://www.upubuntu.com/2012/10/to-do-list-after-new-installation-of.html}{}\\
+		
+
+		\item [\textbullet] \textsl{Anleitung zum Kompilieren unter Ubuntu:}\\
+		\url{https://help.ubuntu.com/community/CompilingEasyHowTo}{}
+
+	      \end{itemize}
+
+
+	  \end{itemize}
+
+	 
+\end{frame}
+
+
+\end{document}

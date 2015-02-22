@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.17pt}
+\select@language {ngerman}
+\beamer@sectionintoc {2}{Softwareverwaltung unter Linux}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{1.Das Konzept Paketverwaltung}{3}{0}{1}
+\beamer@subsectionintoc {2}{2}{2.Ubuntu Software-Center}{4}{0}{1}
+\beamer@subsectionintoc {2}{3}{3.Repositories}{5}{0}{1}

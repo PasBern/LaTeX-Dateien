@@ -1,0 +1,3 @@
+\beamer@endinputifotherversion {3.16pt}
+\beamer@sectionintoc {1}{Einleitung}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Overview of existing methods}{3}{0}{1}

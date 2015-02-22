@@ -1,0 +1,34 @@
+\beamer@endinputifotherversion {3.30pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\sectionentry {1}{Vortrag}{2}{Vortrag}{0}}
+\headcommand {\beamer@sectionpages {1}{1}}
+\headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\slideentry {1}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\sectionentry {2}{Softwareverwaltung unter Linux}{3}{Softwareverwaltung unter Linux}{0}}
+\headcommand {\beamer@sectionpages {2}{2}}
+\headcommand {\beamer@subsectionpages {2}{2}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{3}{1.Das Konzept Paketverwaltung}}\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\slideentry {2}{1}{1}{3/3}{1.Das Konzept Paketverwaltung}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{4}{2.Ubuntu Software-Center}}\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\slideentry {2}{2}{1}{4/4}{2.Ubuntu Software-Center}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{5}{3.Repositories}}\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\slideentry {2}{3}{1}{5/5}{3.Repositories}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{6}{4.Updates}}\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\slideentry {2}{4}{1}{6/6}{4.Updates}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\beamer@subsectionentry {0}{2}{5}{7}{5.Installation/Entfernen von Paketen}}\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\slideentry {2}{5}{1}{7/7}{5.Installation/Entfernen von Paketen}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\beamer@subsectionentry {0}{2}{6}{8}{6.Sonderrepositories unter Ubuntu - PPAs}}\headcommand {\beamer@subsectionpages {7}{7}}
+\headcommand {\slideentry {2}{6}{1}{8/8}{6.Sonderrepositories unter Ubuntu - PPAs}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@partpages {1}{8}}
+\headcommand {\beamer@subsectionpages {9}{8}}
+\headcommand {\beamer@sectionpages {3}{8}}
+\headcommand {\beamer@documentpages {8}}
+\headcommand {\def \inserttotalframenumber {8}}

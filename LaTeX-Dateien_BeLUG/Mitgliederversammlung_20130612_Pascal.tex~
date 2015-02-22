@@ -1,0 +1,352 @@
+% Created 2012-01-14 Sat 01:59
+\documentclass[11pt,a4paper,ngerman]{article}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage[ngerman]{babel}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=true,pdfborder={0 0 
+0},backref=section,colorlinks=true,urlcolor=blue]{hyperref}
+\usepackage{breakurl}
+\usepackage{lastpage}
+\usepackage{textcomp}
+
+
+%%%keine Monospace-Schriftart für Hyperlinks
+\newcommand{\urlwofont}[1]
+{
+\urlstyle{same}\url{#1}
+}
+
+
+%%%verkleinert den Abstand bei Listen und Aufzählungen zwischen denm einzelnen 
+%%%Punkten
+\usepackage{mdwlist}
+\usepackage{xcolor}
+
+
+%%Definition von Grautoenen
+\definecolor{dunkelgrau.80}{gray}{0.20}
+\definecolor{hellgrau.60}{gray}{0.40}
+
+
+% Kopf- und Fusszeile
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhf{}
+
+\lhead{Protokoll - Mitgliederversammlung 12.Juni 2013}
+\rhead{\thepage \ | \pageref{LastPage}}
+\cfoot{}
+
+
+\title{\textbf{Mitgliederversammlung - Protokoll}}
+\author{\emph{Berlin Linux User Group}}
+\date{12. Juni 2013}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\selectlanguage{ngerman}
+
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+\newpage
+
+
+
+
+\section{TOPIC I: Anwesenheit/Beschlussfähigkeit/Wahl des Versammlungsleiters 
+und Protokollführers}
+
+  \subsection{Anwesende Mitglieder}
+
+    \begin{itemize*}
+      \item Lutz Matscholl
+      \item Bodo Eichstädt
+      \item Klaus Montigel
+      \item Norbert Ziese
+      \item Andreas Gläser
+      \item Pascal Bernhard
+      \item Reinhard Peiler
+      \item Friedrich W. Brockstedt
+      \item Rainer Herrendörfer
+      \item Frank Hildebrecht
+      \item Sebastian Andres
+      \item Ralf Vögtle
+      \item Lutz Willek
+      \item Gerhard Lüdtke
+      \item Rüdiger Harnisch
+      \item Christoph Koydl
+      \item Claus Schäfer
+      \item Arne Linus Eichstädt
+      \item Philipp von den Linden
+      \item Michael Rößler
+      \item Thorsten Stöcker
+
+
+   \end{itemize*}
+
+    Anzahl: 20
+
+  \subsection{Beschlussfähigkeit \& Wahl von Versammlungsleiter und 
+	      Protokollführer}
+
+	      Der Vorstandsvorsitzende stellte fest, dass die 
+	      Mitgliederversammlung satzungsgemäß einberufen wurde und 
+	      beschlussfähig ist. \\
+	      \\
+	      Zum Versammlungsleiter wurde \emph{Friedrich W. Brockstedt} 
+	      bestimmt. \\
+	      Zum Protokollführer wurde \emph{Pascal Bernhard} bestimmt.
+
+
+
+  \subsection{Genehmigung der Tagesordnung}
+
+	      Es wurden keine Themen zur Tagesordnung hinzugefügt. \\
+	      Die Tagesordnung wurde einstimmig angenommen.
+
+\newpage{}	  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	
+\section{TOPIC II: Berichte zu Aktivitäten im 1. Halbjahr 2013}
+
+  
+  \subsection{Document Freedom Day [von: 
+              \textcolor{hellgrau.60}{\textsl{Andreas Gläser, Lutz Matscholl}}]}
+
+              
+Den \textsl{Document Freedom Day 2013} können wir als insgesamt 
+gelungen betrachten. Neben einem Vortrag von Andreas Gläser zum Thema 'Freie 
+Dokumentformate' kam bei den Besuchern auch das gemeinsame Kochen und Essen gut 
+an. Leider hatten wir keine Unterstützung durch die \emph{Free Software 
+Foundation Europe} (FSFE), was möglichweise daran lag, dass wir sie zu spät 
+kontaktiert hatten.
+
+
+
+  \subsection{LinuxTag 2013 [von: \textcolor{hellgrau.60}{\textsl{Ralf 
+              Vögtle}}]}
+	    
+Dank sehr guter Personalorganisation und engagierten Mitgliedern können wir 
+unsererseits mit der Unterstützung der Organisatoren des LinuxTags zufrieden 
+sein. Kein einziger Helfer ist während der vier Messetage ausgefallen, auch war 
+unser Stand stets mit einer angebrachten Anzahl von Mitgliedern besetzt. Der 
+RepRap von Uwe (IN-Berlin) zog viele Messebesucher an unseren Stand und auch 
+Haukes GPG-Programm traf auf Interesse. Leider haben wir auch dieses Jahr 
+wieder kein eigenes, überzeugendes Konzept der Eigendarstellung auf 
+öffentlichen Veranstaltungen aufstellen können. Einerseits war der Stand für 
+Messebesucher wenig attraktiv, sprich die Präsentation der BeLUG als Verein war 
+nicht zufriedenstellend. Zudem machte unser Stand einen unaufgeräumten Eindruck 
+(Beispielsweise standen die leeren Bierkisten nach der Standparty am ersten 
+Messertag die restlichen Tage weiterhin sichtbar am Stand herum). Die Anzahl 
+der Brezeln bei der Standparty war nicht ausreichend.
+  
+  
+  
+  \subsection{Mitgliedsbeiträge [von: \textcolor{hellgrau.60}{\textsl{Reinhard 
+              Peiler}}]}
+
+Leider sind ca. 30 Mitglieder im Rückstand mit ihren Mitgliedsbeiträgen. Diese 
+Mitglieder werden vom Vorstand informiert und entrichten hoffentlich ihren 
+ausstehende Mitgliedsbeitrag. Sollte dies nicht geschehen, verlieren die 
+Betroffenen ihren Mitgliedstatus nach §4 der Satzung:\par
+
+\vspace{1cm}
+
+\textcolor{dunkelgrau.80}{\textit{\textbf{\S4 Ausscheiden von Mitgliedern}
+[...] Die Mitgliedschaft erlischt mit dem Austritt eines Mitglieds, der nur 
+jeweils zum Quartalsende möglich ist und unter Einhaltung einer Frist von einem 
+Monat zum Quartalsende schriftlich erklärt werden muss. Ein Mitglied kann von 
+der Mitgliederliste gestrichen werden, wenn es trotz zweimaliger Mahnung mit 
+der Zahlung des Beitrags im Rückstand ist. Die Streichung darf erst beschlossen 
+werden, nachdem seit der Absendung des zweiten Mahnschreibens drei Monate 
+verstrichen und die Beitragsschulden nicht beglichen sind. Die Streichung ist 
+dem Mitglied mitzuteilen.Ein ausgetretenes Mitglied hat keinen Anspruch gegen 
+das Vereinsvermögen.}}\\
+\\
+\noindent
+Auf der nächsten Mitgliederversammlung wird der Vorstand das Resultat der 
+Aufarbeitung der Mitgliederliste bekannt geben.
+
+
+  \subsection{Bericht des Kassenwarts [von: 
+\textcolor{hellgrau.60}{\textsl{Frank Hildebrecht}}]}
+
+Gegenwärtig befinden sich auf dem Bankkonto der BeLUG 3842,98 EUR, in der Kasse 
+189,05 EUR. In den nächsten Monaten wird das Konto von der Postbank zur 
+Gemeinschaftsbank für Leihen und Schenken (kurz: GLS Bank) umgezogen. Bei den 
+Zahlungsmodalitäten des Mitgliedsbeitrages wird es Änderungen zur 
+bisherigen Praxis geben (Diese wurden per Mehrheitsbescheid von den Mitgliedern 
+beschlossen). Die bargeldlose Entrichtung des Mitgliedsbeitrages wird weiterhin 
+möglich bleiben. Der Beitrag muss, gleich ob per Überweisung oder mit Bargeld 
+bis Ende Februar des betreffenden Jahres gezahlt werden. Neue Mitglieder müssen 
+innerhalb von 4 Wochen der erfolgreichen Antragstellung auf Aufnahme in 
+den Verein ihren anteiligen Beitrag entrichten.
+
+
+  \subsection{Bericht zum Server [von: 
+\textcolor{hellgrau.60}{\textsl{Lutz Willek}}]}
+
+Dank einer zweckgebundenen Spende von \emph{Six Minutes Media} und einer 
+weiteren Spende der \emph{qipu GmbH} von gesamt über 1700 Euro konnte endlich 
+für die BeLUG ein neuer Server angeschafft werden. Dieser neue Server löst den 
+Desktop-Rechner ab, der bisher für diesen Zweck verwendet wurde. Neben den 
+verbesserten Verwaltungsmöglichkeiten ist dieser Server deutlich 
+leistungsfähiger und gleichzeitig stromsparender als sein Vorgänger. Der Server 
+kostete etwa 800 Euro, spart im Vergleich zum vorherigen Setup etwa 50 W ein. 
+Der Desktop-Rechner konnte einem anderen Zweck zugeführt werden. Herzlichen 
+Dank an die Spender, die mit Ihrer Spende den neuen Server erst ermöglicht 
+haben.
+
+
+  \subsection{Bericht zur Küche [von: 
+\textcolor{hellgrau.60}{\textsl{Lutz Matscholl}}]}
+
+Leider mussten wir feststellen, dass der Abfluss in der Küche zum unzähligsten 
+Male verstopft ist. Gerhard Lüdtke ist nach beträchtlichem Zeit- \& Geldeinsatz 
+nicht mehr bereit, die Pumpe ein weiteres Mal zu reparieren. Jetziger Plan: 
+zusammen mit dem IN-Berlin soll eine Tür oder ähnliches installiert werden, 
+damit die Küche abgesperrt werden kann. Der Schlüssel hierfür soll nur 
+kontrolliert herausgegeben werden.
+
+
+  \subsection{Bericht zu Buchrezensionen [von: 
+\textcolor{hellgrau.60}{\textsl{Claus Schäfer}}]}
+
+Die Buchrezensionen sind für die BeLUG sehr einträglich, da sie für viele 
+Besucher der Einstieg zu unserer Webseite sind, das heißt sie kommen auf der 
+Suche nach einer speziellen Buchbesprechung zu uns. Leider stehen weiterhin 
+drei Buchrezensionen aus, die noch abgeliefert werden müssen.
+
+
+  \subsection{Bericht zu kommenden Vorträgen [von: 
+\textcolor{hellgrau.60}{\textsl{Sebastian Andres}}]}
+
+Für das zweite Halbjahr 2013 sind zwei Vorträge fest eingeplant mit den Themen: 
+\textsl{OpenWRT} und \textsl{Solaris}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{TOPIC III: Geplante Aktivitäten im 2. Halbjahr 2013}
+
+
+  \subsection{Helfergrillen}
+  
+Am 19. Juni wird das Helfergrillen in der Kulturfabrik stattfinden, um uns so 
+bei den Helfern am LinuxTag für ihren Einsatz zu bedanken. Thorsten Stöcker 
+bietet seine Hilfe bei der Vorbereitung des Helfergrillens an, obwohl er 
+selbst nicht am LinuxTag präsent war.
+
+
+
+  \subsection{Software Freedom Day}
+  
+Unser Engagement am Software Freedom Day (21. September) hängt von der 
+Unterstützung der \emph{Free Software Foundation Europe} (FSFE) ab, das heißt 
+ob von ihrer Seite ein Workshop angeboten wird oder nicht.
+
+
+  \subsection{Linux Install Partys an Berliner Universitäten}
+
+Dieses Jahr möchten wir neben der Unterstützung für Linux Install Partys an der 
+Humboldt-Universität und der Technischen Universität auch der Linux-Gruppe 
+SPLINE (Studentisches Projekt Linux Netzwerke) der Freien Universität unsere 
+Hilfe anbieten.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{TOPIC IV: Projekte}
+
+
+  \subsection{Projekt: Raspberry Pi als Multimedia-Zentrale}
+  
+Für dieses Projekt ist die Anschaffung eines \emph{Raspebeery Pis} samt 
+Speicherkarte und Gehäuse für insgesamt ca. 60 EUR geplant. Das Ergebnis soll 
+auf dem großen Fernseher gezeigt werden. Ein Workshop ist angedacht.
+
+
+  \subsection{Projekt: eLAB}
+  
+Das Projekt \emph{eLAB} befindet sich derzeit noch im Aufbau, bisher treffen 
+sich die Interessenten dienstags und freitags. Handicap ist die fehlende 
+Institutionalisierung des Projekts, das \emph{eLAB} ist kein Verein.
+
+
+  \subsection{Projekt: Spacenet}
+
+\urlwofont{https://www.in-berlin.de/provider/spacenet.html}\\
+\\
+Ein Radiusserver soll eingerichtet werden, der allen BeLUG-Mitgliedern 
+weltweit einfachen Internetzugang in Hackerspaces bereitstellt. Gleichzeitig 
+soll ein WLAN-Zugangspunkt in den BeLUG-Räumen aufgebaut werden, der für 
+Besucher mit eigener Spacenet-Kennung einen Internet-Zugang bietet. Dank der 
+von Lutz Willek gespendeten Hardware sind die Voraussetzungen für die Arbeit an 
+diesem Projekt gegeben. Jedoch haben weder Lutz Willek als Initiator, noch 
+Sebastian Andres und Ralf Vögtle aufgrund ihrer Übernahme des Projektes 
+\emph{Printserver} Zeit und suchen Mitglieder, welches dieses für die BeLUG sehr 
+wichtige Projekt starten können. Sowohl der IN-Berlin, als auch Lutz Willek 
+haben Hilfe bei eventuell auftauchenden Problemen zugesagt. An diesem Projekt 
+interessierte Mitglieder melden sich bitte beim Vorstand, der dann die 
+Bereitstellung der Hardware organisiert und die Zugangsdaten zu \emph{Spacenet} 
+weitergibt.
+
+
+
+  \subsection{Projekt: Printserver}
+
+Die Betreuung des Projektes werden Ralf Vögtle, Philipp von der Linden und 
+Sebastian Andres übernehmen. Ziel ist die Weiterentwicklung des Webinterfaces, 
+da Jean-Christoph Duberga diese aus Zeitmangel nicht mehr übernehmen kann.  
+  
+  
+  
+  \subsection{Webseite der BeLUG}
+  
+Das Design der Vereinswebseite wird durch Fred Brockstedt und Pascal Bernhard 
+neu gestaltet. Ebenso muss die inhaltliche Struktur der Internetseite 
+überarbeitet werden, was Reinhard Peiler und Pascal Bernhard in Angriff nehmen 
+werden. Dauerauftrag und Aufgabe für alle Mitglieder der BeLUG ist die 
+inhaltliche Pflege der Webseite, deren Content regelmäßig aktualisiert werden 
+muss. Hierfür werden noch Mitglieder zur Unterstützung gesucht. 
+  
+  
+
+  \subsection{Themenabende}
+
+Fred Brockstedt bietet technische Unterstützung für die Veranstaltung und 
+Leitung von Themenabenden an. Generell sind alle Mitglieder aufgerufen, in 
+Erwägung zu ziehen, einen Themenabend zu einem Thema ihrer Wahl zu leiten.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{TOPIC V: Verschiedenes}
+
+
+In Zukunft sollen die Vereinsräume regelmäßig und gemeinsam von den 
+Mitgliedern aufgeräumt und gepflegt werden.\\
+\\
+\\
+\textbf{Die Mitgliederversammlung endet um 20:58h.}
+
+
+
+
+
+
+
+
+\end{document}

@@ -1,0 +1,110 @@
+\documentclass[11pt,slidestop,compress,sans,handout,blackandwhite]{beamer}
+
+\usepackage{beamerthemesplit}
+\usepackage[ansinew]{inputenc}
+\usepackage[ngerman]{babel}
+
+%%Pakete für mathematische Symbole und Umgebungen
+\usepackage{amsmath,amsfonts,amssymb}
+
+%%Paket für Bilder
+\usepackage{epsfig}
+
+
+
+
+\title{Paketverwaltung unter Ubuntu}
+\author{Pascal Bernhard (BeLUG)}
+\date{\today}
+
+\begin{document}
+%% Folie 1 (Titelfolie)
+\frame{\titlepage}
+
+\section[Abschnitt]{}
+\frame{\tableofcontents}
+
+\section{Softwareverwaltung unter Linux}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 2
+
+\subsection{1.Das Konzept Paketverwaltung}
+
+\frame
+{
+  \frametitle{Was bedeutet Paketmanagement?}
+
+  \begin{itemize}
+  \item<1-> Linux-Software ist in Paketen organisiert
+  \vspace{2cm}
+  \item<2-> Softwareinstallation erfolgt über Repositories
+  \vspace{2cm}
+  \item<3-> Pakete sind teilweise voneinander abhängig      
+  \end{itemize}
+}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 3
+
+
+\subsection{2.Ubuntu Software-Center}
+
+\frame
+{
+  \frametitle{Wie installiere ich Programme grafisch?}
+
+  \begin{itemize}
+  \item<1-> Ubuntu Software-Center
+  \item<2-> Softwareinstallation zentral über Repositories
+  \item<3-> Pakete sind teilweise voneinander abhängig      
+  \end{itemize}
+}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 4
+
+
+\subsection{3.Repositories}
+
+\frame
+{
+	\frametitle{Was sind Repositories? Wo kommen die Pakete her?}
+	
+	\begin{itemize}
+	\item<1-> Repositories sind Distributions-spezifisch
+	\item<2-> Konfiguration der Paketquellen in \texttt{/etc/apt/sources.list}
+	\item<3-> Hinzufügen von Repositories	
+	\end{itemize}
+}	
+	
+%--------------------------------------------------------------------------------------%
+%%%Folie 5	
+	
+\subsection{4.Updates}
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 6
+
+\subsection{5.Installation/Entfernen von Paketen}
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 7
+
+\subsection{6.Sonderrepositories unter Ubuntu - PPAs}
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 8
+
+\subsection{7.Manuelle Installation von Paketen}
+
+
+
+
+
+
+
+\end{document}

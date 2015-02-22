@@ -1,0 +1,212 @@
+\documentclass[11pt,compress,handout,blackandwhite]{beamer}
+
+\usepackage{beamerthemesplit}
+\usepackage[ansinew]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{xcolor}
+
+
+%%Pakete für mathematische Symbole und Umgebungen
+\usepackage{amsmath,amsfonts,amssymb}
+
+%%Paket für Bilder
+\usepackage{epsfig}
+
+\usepackage{marvosym}
+%\usepackage{typearea}
+%\usepackage{array}
+%\usepackage{booktabs}
+\usepackage{textcomp}
+
+\definecolor{ubuntu}{rgb}{0.99,0.5,0.2}
+\definecolor{dark-violet}{rgb}{0.40,0,0.48}
+\definecolor{dunkelgrau.60}{gray}{0.40}
+
+
+
+
+\title{Einführung in die Shell}
+\author{Pascal Bernhard}
+\institute[BeLUG]{Berliner Linux User Group}
+\date{\today}
+
+\titlegraphic{\includegraphics[width=3.8cm,height=1.2cm]{belug-ev.png}}
+\logo{\pgfimage[width=1.9cm,height=0.6cm]{Creative_Commons_BY-NC-SA.png}}
+
+\begin{document}
+%% Folie 1 (Titelfolie)
+\frame{\titlepage}
+
+\section[Vortrag]{}
+\frame{\tableofcontents}
+
+\section{Softwareverwaltung unter Linux}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 2
+
+\subsection{1.Das Konzept Paketverwaltung}
+
+\frame
+{
+  \frametitle{Was bedeutet Paketmanagement?}
+
+  \begin{itemize}
+  \item<1-> Linux-Software ist in Paketen organisiert
+  \vspace{1.5cm}
+  \item<2-> Pakete sind voneinander abhängig
+	\begin{itemize}
+	 \item \textcolor{dunkelgrau.60}{Programme teilen sich Bibliotheken}
+	\end{itemize}
+   
+\vspace{1.5cm}
+
+  \item<3-> Softwareinstallation erfolgt über Repositories
+
+ 
+
+  \end{itemize}
+}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 3
+
+
+\subsection{2.Ubuntu Software-Center}
+
+\frame
+{
+  \frametitle{Wie installiere ich Programme?}
+
+  \begin{itemize}
+  \item<1-> Ubuntu Software-Center
+
+  \vspace{1.5cm}
+
+  \item<2-> Kommandozeilentool: \textsl{\textcolor{dunkelgrau.60}{Apt}}
+
+  \vspace{1.5cm}
+  
+  \item<3-> GUI für Apt: \textsl{\textcolor{dunkelgrau.60}{Synaptic}}
+  \end{itemize}
+}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 4
+
+
+\subsection{3.Repositories}
+
+\frame
+{
+  \frametitle{Was sind Repositories? Wo kommen die Pakete her?}
+	
+  \begin{itemize}
+  \item<1-> Repositories sind Distributions-spezifisch
+
+  \vspace{1.5cm}
+
+  \item<2-> Konfiguration der Paketquellen in \texttt{\textcolor{dark-violet}{/etc/apt/sources.list}}
+
+  \vspace{1.5cm}
+
+  \item<3-> Hinzufügen von Repositories	
+  \end{itemize}
+}	
+	
+%--------------------------------------------------------------------------------------%
+%%%Folie 5	
+	
+\subsection{4.Updates}
+
+\frame
+{
+  \frametitle{Wie halte ich mein Ubuntu auf dem aktuellen Stand?}
+  
+  \begin{itemize}
+  \item<2-> Updates/Upgrades werden zentral über das Paketmanagement gemacht für alle Pakete
+
+  \vspace{1.5cm}
+
+  \item<3-> Update über Synaptic
+
+  \vspace{1.5cm}
+
+  \item<4-> Update auf der Kommandozeile mit \texttt{\textcolor{ubuntu}{sudo apt-get update}} \& \texttt{\textcolor{ubuntu}{sudo apt-get upgrade}}
+\end{itemize}
+}
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 6
+
+\subsection{5.Installation/Entfernen von Paketen}
+
+\begin{frame}[containsverbatim]
+\frametitle{Wie installiere \& ich Pakete unter Ubuntu?}
+
+  \begin{itemize}
+   \item Update der Paketquellen \texttt{\textcolor{ubuntu}{sudo apt-get update}}
+
+   \vspace{1.5cm}
+
+   \item Suche nach Paketen \texttt{\textcolor{ubuntu}{sudo apt-cache search PAKETNAME}}
+   
+   \vspace{1.5cm}
+
+   \item Installation von Paketen \texttt{\textcolor{ubuntu}{sudo apt-get install PAKETNAME1 PAKETNAME2}}
+ 
+  \end{itemize}
+
+\end{frame}
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 7
+
+\subsection{6.Sonderrepositories unter Ubuntu - PPAs}
+
+
+\begin{frame}[containsverbatim]
+\frametitle{PPAs \texttwelveudash Personal Package Archives}
+
+  \begin{itemize}
+   
+    \item nicht-offizielle Repositories - keine Unterstützung durch Ubuntu/Cannonical
+
+    \vspace{1.5cm}
+
+    \item Beispiel: \textcolor{dunkelgrau.60}{Ubuntu Tweak}
+
+      \begin{itemize}
+
+       \item \texttt{\textcolor{ubuntu}{sudo add-apt-repository ppa:tualatrix/ppa}}
+
+       \item \texttt{\textcolor{ubuntu}{sudo add-get update}}
+
+       \item \texttt{\textcolor{ubuntu}{sudo apt-get install ubuntu-tweak}}
+
+      \end{itemize}
+
+
+
+  \end{itemize}
+
+
+
+\end{frame}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 8
+
+\subsection{7.Manuelle Installation von Paketen}
+
+
+
+
+
+
+
+\end{document}

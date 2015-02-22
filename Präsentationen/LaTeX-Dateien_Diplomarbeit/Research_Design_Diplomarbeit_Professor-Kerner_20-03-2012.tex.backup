@@ -1,0 +1,219 @@
+\documentclass[11pt,a4paper,ngerman]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage{parskip}
+\pagestyle{empty}
+\usepackage[ansinew]{inputenc}
+
+
+\usepackage{xcolor}
+\usepackage[ngerman]{babel}
+\usepackage{relsize}
+\usepackage{paralist}
+\usepackage{typearea}
+\usepackage{setspace}
+\usepackage{textcomp}
+\usepackage{layouts}
+\usepackage{amsmath}
+\usepackage{fancybox}
+\usepackage{graphicx}
+\usepackage{calc}
+
+
+
+%%%vordefinierte Farben für Seitenfarben
+%  \usepackage[usenames,dvipsnames]{color}
+
+\definecolor{dunkelgrau.80}{gray}{0.20}
+\definecolor{dunkelgrau.60}{gray}{0.40}
+\definecolor{Dschungelgr\"{u}n}{cmyk}{0.99,0,0.52,0.2}
+\definecolor{midblue}{rgb}{0.173,0.212,0.597}
+
+%%%Seitenränder einstellen
+\usepackage[top=10mm,bottom=10mm,left=15mm,right=35mm,marginparsep=12pt]{geometry}
+
+
+
+%%%-----------------------------------------------------------------------
+\begin{document}
+
+
+
+ 
+ 	\begin{flushright}
+ 			{\small \sffamily{\textcolor{dunkelgrau.60}{Fragestellung\\
+ 							\emph{Pascal Bernhard}\\
+ 							Diplomarbeit\\
+ 							\emph{Prof. Dr. Manfred Kerner}}}}
+ 	\end{flushright}						
+
+	
+
+	\begin{center}
+			{\shadowbox{\sffamily{\textbf{ 
+				Energie im Baltikum
+			\texttwelveudash{} Mehr Versorgungssicherheit durch gemeinsame europ\"{a}ische Energiepolitik?}}}}
+	\end{center} 	
+
+	
+ 
+		
+		\begin{itemize}
+		\textcolor{dunkelgrau.60}{
+			
+			
+			\item{\sffamily{\textbf{\emph{Kann die EU-Energiepolitik die Versorgungssicherheit der baltischen Länder verbessern?}}}}
+ 
+			\normalmarginpar
+
+ 			\begin{itemize}
+ 			
+ 				\item{\textbf{Theorieanwendung:} Anwendung von IB-Theorien (liberaler Intergouvernementalismus vs. Neo-Realismus) \& Integrationsans\"{a}tzen auf europäische Energiepolitik am Beispiel der baltischen Länder}
+
+
+			      \begin{itemize}
+
+			       \item{Mit welchem theoretischen Ansatz kann Energiepolitik im Bereich Versorgung mit Erdgas in Europa heute besser erklärt werden?}
+
+				\begin{itemize}
+
+				  \item{baltische Länder haben eine zu schwache Position gegenüber Russland und müssen somit auf eine Integration der Energiepolitik in der Europäischen Union setzen}
+
+				  \item{der \textsl{Neo-Realismus} würde voraussagen, dass Energiepolitik in Europa weiterhin von den Nationalstaaten auf bilateraler Ebene geregelt werden\\
+				  $\Rightarrow$ große Mitglieder (Deutschland, Frankreich, Italien z.B.) schließen separat Lieferverträge mit Russland ab\\
+				  $\Rightarrow$ schwächere Mitglieder der EU sehen ihre Interessen missachtet}
+
+				  \item{laut \textsl{Supranationalismus\textendash Institutionalismus} wird Energiepolitik in Europa nicht mehr von den Nationlstaaten sondern über gemeinschaftliche Institutionen bestimmt\\
+				  $\Rightarrow$ auch die Anliegen der kleinen Mitglieder werden berücksichtigt}\\
+				  $\Rightarrow$ ein umfassendes supranationales legislativ-exekutives Gefüge ist hierfür ausreichend
+	    \
+
+
+
+				\end{itemize}
+
+			       \item{Welche Faktoren treiben die Integration von Energiepolitik auf europäischer Ebene?}
+
+			      \end{itemize}
+
+
+
+ 				\item{\textsl{aktuelle politische Relevanz}}
+ 				
+ 					\begin{itemize}
+
+ 					\item{extreme Abhängigkeiten des Baltikums von russischem Gas} 					
+ 					\item{Energieversorgungssicherheit als gesamteurop\"{a}ische Herausforderung \texttwelveudash{} Energieversorgung in Osteuropa idealer  Testfall für Effektivität einer gemeinsamen europäischen Energiepolitik}
+
+ 					\item{Russland betreibt forsche bis aggressive Außenpolitik gegenüber seinen Nachbarn (Beispiel: {} \textsl{Cyberattacken gegen Estland  im Jahre 2007, Streitigkeiten über Gaslieferung nach Westeuropa über die Ukraine \& Gazproms Rolle auf dem litauischen Energiemarkt)}}
+ 					\end{itemize}
+
+
+				\item{\textbf{Annahme: \emph{Aufgrund ihrer starken Abhängigkeit von russischen Gaslieferungen und schwachen Position in internationalen Verhandlungen, ist eine starke gemeinsame Energiepolitik von Interesse für die baltischen Staaten}}}
+ 					
+ 			\end{itemize}
+ 
+		\end{itemize} 
+ 
+ 		\begin{itemize}
+ 			
+ 			\item{Theoretische Grundlagen}
+ 				
+ 				\begin{itemize}
+ 					
+ 					\item{Energie als klassischer Bereich für neo-realistische Ansätze \texttwelveudash {} Energiesektor ist eng mit dem Nationalstaat verbunden}
+
+ 					\item{Erklärung der Integrationsfortschritte in der Europäischen Union auf dem Gebiet der Energiepolitik}
+ 						
+ 						\begin{itemize}
+ 							
+ 							\item{liberaler  Intergouvernementalismus} 
+ 							\item{Spill-over Effekte durch gemeinsamen Markt}
+							\item{Problem kollektiver Handlungen \texttwelveudash {} \"{U}berwindung des Kooperationsdilemmas (Abwehr einer \textsl{divide-et-impera} \texttwelveudash {} Strategie der F\"{o}rderl\"{a}nder)}
+ 										
+ 						\end{itemize}
+ 	
+ 	
+ 	
+ 						
+ 
+ 	
+ 	
+ 							
+
+ 		
+				  \end{itemize}}
+ 			
+ 		\end{itemize}
+ 		
+
+ 							
+	\begin{itemize}
+		
+		
+		\item{\textbf{\sffamily{\textsl{abh\"{a}ngige Variable:  Handlungsspielraum der EU-Energiepolitik}}}}	
+			
+			\begin{itemize}
+				\item{Grad der Integration in Bezug auf Energiepolitik}
+				\item{\textsl{Operationalisierung}}
+							
+					\begin{itemize}
+						\item{\"{U}bertragung von Kompetenzen an europ\"{a}ische Organe samt Sanktionsinstrumente gegen widerwillige Mitgliedsstaaten}
+						\item{Bewilligung von Mitteln zur Fortentwicklung eines einheitlichen europäischen Energiemarktes (Zusammenschluss von Netzen)}
+						\item{politische Beschl\"{u}sse zur  Koordination nationaler Politiken, bzw. gemeinsame Verhandlungen mit Russland}
+						\item{Umfang autonomer Handlungen einzelner Mitgliedsstaaten an der gemeinsamen Position vorbei}
+					\end{itemize}
+					
+			\end{itemize}}
+			
+		\item{\textcolor{midblue}{\sffamily{\textbf{\textsl{unabh\"{a}ngige Variablen}}}}}
+		
+			\begin{itemize}
+				\item{Pr\"{a}ferenzen  der Mitgliedsstaaten zu Integration von Energiepolitik}
+				\item{Integrationswille der Gemeinschaftsorgane: {} Kommission (Vorschläge für neue Direktiven) \& Europ\"{a}ischen Parlament (Abstimmungsverhalten)}
+				\item{\textsl{Operationalisierung:}}
+
+									
+				\begin{itemize}
+					
+					\item{\textcolor{dunkelgrau.60}{Kompetenzverteilung nach Europäischen Verträgen}}
+
+					\item{\textcolor{dunkelgrau.60}{\textsl{Kommission:} {} Gr\"{u}nbuch und White Papers, Statements, Entw\"{u}rfe des DG TREN, Staff Working Documents}}			
+																	\item{\textcolor{dunkelgrau.60}	
+					{\textsl{Mitgliedsstaaten:} {} Stellungnahmen des Rates,  Protokolle (soweit zug\"{a}nglich), COREPER und Energiekommittee}}			
+	
+					\item{\textcolor{dunkelgrau.60}{\textsl{Energiepolitik im Baltikum:} {} Handeln die baltischen Länder auch gemeinschaftlich? Gibt es auf regionaler Ebene Bestrebungen die Energiemärkte miteinander zu koppeln und gemeinsame Infrastruktur zu Nutzen (LNG-Terminal für Gaslieferungen aus anderen Ländern}}					
+				\end{itemize}
+							
+			\end{itemize}
+				
+	\end{itemize} 						
+	
+
+\vspace{2cm}
+
+%%		    \noindent\Ovalbox{%
+%%		    \begin{minipage}{0.98\linewidth-2\fboxsep-2\fboxrule}%
+%%		     \sffamily{% 
+%%		    \begin{itemize}
+%%
+%%		       \item{\textsl{\textcolor{purple}
+%%		      {Können die baltischen Länder als Eins gesehen werden?}}}
+%%
+%%		       \item{\textsl{\textcolor{purple}{Falls nicht, wie soll der Vergleich erfolgen?}}}
+%%		       
+%%		       \item{\textsl{\textcolor{purple}{Die Region als gemeinsamer Nenner? Welche gleichen 						Merkmale in Bezug auf Energie teilen die baltischen Staaten?}}}
+
+%%		       \item{\textsl{\textcolor{purple}{Separate Behandlung der Länder ist professionell, aber 						die Quellen sind schwer zugänglich}}}
+%%
+%%		      \end{itemize}}
+
+%%		    \end{minipage}}
+
+
+							
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+

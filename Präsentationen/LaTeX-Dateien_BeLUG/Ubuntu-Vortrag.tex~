@@ -1,0 +1,271 @@
+\documentclass[11pt,compress,handout,blackandwhite]{beamer}
+
+\usepackage{beamerthemesplit}
+\usepackage[ansinew]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{xcolor}
+\usepackage{fancybox}
+
+\definecolor{links}{HTML}{2A1B81}
+%%Farbe von Hyperlinks ändern
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+      
+
+
+
+%%Pakete für mathematische Symbole und Umgebungen
+\usepackage{amsmath,amsfonts,amssymb}
+
+%%Paket für Bilder
+\usepackage{epsfig}
+
+\usepackage{marvosym}
+
+\usepackage{textcomp}
+
+\usepackage{hyperref}
+
+\definecolor{ubuntu}{rgb}{0.99,0.5,0.2}
+\definecolor{dark-violet}{rgb}{0.40,0,0.48}
+\definecolor{dunkelgrau.60}{gray}{0.40}
+
+
+
+
+\title{Paketverwaltung unter Ubuntu}
+\author{Pascal Bernhard}
+\institute[BeLUG]{Berliner Linux User Group}
+\date{\today}
+
+\titlegraphic{\includegraphics[width=3.8cm,height=1.2cm]{Black-Ubuntu-Logo.png}}
+\logo{\pgfimage[width=1.9cm,height=0.6cm]{belug-ev.png}}
+
+\begin{document}
+%% Folie 1 (Titelfolie)
+\frame{\titlepage}
+
+
+\section{Softwareverwaltung unter Linux}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 2
+
+%\subsection{1.Das Konzept Paketverwaltung}
+
+\frame
+{
+  \frametitle{Was bedeutet Paketmanagement?}
+
+  \begin{itemize}
+  \item<1-> Linux-Software ist in Paketen organisiert
+	\begin{itemize}
+	 \item \textcolor{dunkelgrau.60}{Programme (z.B. Firefox) bestehen aus einer Mehrzahl an Paketen} 
+	 \newline
+	 \item \textcolor{dunkelgrau.60}{Pakete setzen sich aus mehreren Dateien zusammen}
+	\end{itemize}
+
+  \vspace{0.5cm}
+
+  \item<2-> Pakete sind häufig voneinander abhängig
+	\begin{itemize}
+	 \item \textcolor{dunkelgrau.60}{Programme teilen sich Pakete}
+	\end{itemize}
+   
+  \vspace{0.5cm}
+
+  \item<3-> Softwareinstallation erfolgt über das Paketmanagement-Tool \textsl{\textcolor{dark-violet}{Apt}} (Ubuntu)
+  \end{itemize}
+}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 3
+
+
+%\subsection{2.Ubuntu Software-Center}
+
+\frame
+{
+  \frametitle{Wie installiere ich Programme?}
+
+  \begin{itemize}
+  \item<1-> Ubuntu Software-Center
+
+  \vspace{1.5cm}
+
+  \item<2-> Kommandozeilentool: \textsl{\textcolor{dark-violet}{Apt}}
+
+  \vspace{1.5cm}
+  
+  \item<3-> GUI für Apt: \textsl{\textcolor{dark-violet}{Synaptic}}
+  \end{itemize}
+}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 4
+
+
+%\subsection{3.Repositories}
+
+\begin{frame}
+
+  \frametitle{Was sind Repositories? Wo kommen die Pakete her?}
+	
+  \begin{itemize}
+  \item<1-> Repositories sind Distributions-spezifisch
+    
+    \begin{itemize}
+    \item \textcolor{dunkelgrau.60}{\Ovalbox{Repository bzw. Paketquelle} \textsl{Softwarearchiv mit Paketen speziell für eine Ubuntu-Version}}
+
+    \item \textbf{\textcolor{ubuntu}{Bitte nur für Ubuntu gedachte Paketquellen verwenden!}}
+    \end{itemize}
+
+
+  \vspace{0.5cm}
+
+  \item<2-> Konfiguration der Paketquellen in \texttt{\textcolor{dark-violet}{/etc/apt/sources.list}}
+
+  \vspace{0.5cm}
+
+  \item<3-> Repository-Bereichen unter Ubuntu
+
+    \begin{itemize}
+     \item \textcolor{dunkelgrau.60}{verschiedene Bereiche für unterschiedlich klassifizierte Pakete}
+     \item \textcolor{blue}{main}: offiziell unterstützte Pakete mit freier Lizenz
+     \item \textcolor{green}{restricted}: offiziell unterstützte Pakete, die nicht einer freien Lizenz unterliegen
+     \item \textcolor{yellow}{universe}: von der Linux-Community unterstützte Pakete unter freier Lizenz
+     \item \textcolor{magenta}{multiverse}: nicht-freie Software
+    \end{itemize}
+
+
+  \end{itemize}
+
+\end{frame}
+	
+	
+%--------------------------------------------------------------------------------------%
+%%%Folie 5	
+	
+%\subsection{4.Updates}
+
+\frame
+{
+  \frametitle{Wie halte ich mein Ubuntu auf dem aktuellen Stand?}
+  
+  \begin{itemize}
+  \item<2-> Updates/Upgrades werden zentral über das Paketmanagement gemacht für alle Pakete
+
+  \vspace{1.5cm}
+
+  \item<3-> Update über Synaptic
+
+  \vspace{1.5cm}
+
+  \item<4-> Update auf der Kommandozeile mit \texttt{\textcolor{ubuntu}{sudo apt-get update}} \& \texttt{\textcolor{ubuntu}{sudo apt-get upgrade}}
+\end{itemize}
+}
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 6
+
+%\subsection{5.Installation/Entfernen von Paketen}
+
+\begin{frame}[containsverbatim]
+\frametitle{Wie installiere \& entferne ich Pakete unter Ubuntu?}
+
+  \begin{itemize}
+   \item Update der Paketquellen \texttt{\textcolor{ubuntu}{sudo apt-get update}}
+
+   \vspace{1.5cm}
+
+   \item Suche nach Paketen \texttt{\textcolor{ubuntu}{sudo apt-cache search PAKETNAME}}
+   
+   \vspace{1.5cm}
+
+   \item Installation von Paketen \texttt{\textcolor{ubuntu}{sudo apt-get install PAKETNAME1 PAKETNAME2}}
+  \end{itemize}
+
+\end{frame}
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 7
+
+%\subsection{6.Sonderrepositories unter Ubuntu - PPAs}
+
+
+\begin{frame}[containsverbatim]
+\frametitle{PPAs: Personal Package Archives}
+
+  \begin{itemize}
+    \item nicht-offizielle Repositories - keine Unterstützung durch Ubuntu/Cannonical
+
+    \vspace{1.5cm}
+
+    \item Beispiel: \textcolor{dark-violet}{Ubuntu Tweak}
+
+      \begin{itemize}
+       \item \texttt{\textcolor{ubuntu}{sudo add-apt-repository ppa:tualatrix/ppa}}
+
+       \item \texttt{\textcolor{ubuntu}{sudo add-get update}}
+
+       \item \texttt{\textcolor{ubuntu}{sudo apt-get install ubuntu-tweak}}
+      \end{itemize}
+
+
+
+  \end{itemize}
+
+
+
+\end{frame}
+
+
+%--------------------------------------------------------------------------------------%
+%%%Folie 8
+
+%\subsection{7.Manuelle Installation von Paketen}
+\begin{frame}
+
+\frametitle{Begriffserklärung}
+	  
+      \begin{itemize}
+      \item \textbf{Repository:} \textcolor{dunkelgrau.60}{Softwarearchiv mit Paketen speziell für eine Linux-Distribution}
+
+      \vspace{1.0cm}
+
+      \item \textbf{Paketabhängigkeiten:} \textcolor{dunkelgrau.60}{Programme setzen jeweils bestimmte Pakete voraus. Die Paketverwaltung hat die Aufgabe diese Abhängigkeiten zu managen. Werden die Paketabhängikeiten verletzt, weil zwei unterschiedliche Programme ein bestimmtes Paket in jeweils anderer Version benötigen, wird eines dieser Programme entweder entfernt, bzw. dieses erst gar nicht installiert.}
+      \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+
+\frametitle{Begriffserklärung}
+	  
+      \begin{itemize}
+	\item \textbf{proprietäre Software/Pakete:} \textcolor{dunkelgrau.60}{Proprietäre Software/Pakete stehen nicht unter einen freien Lizenz (z.B. GPL, LGPL, Afero-Lizenz, etc.) und können dementsprechend nicht wie freie Software im Quellcode eingesehen, verändert und weitergegeben werden oder dies ist nur sehr eingeschränkt möglich.}
+
+	\vspace{0.5cm}
+
+	\item Weitere Informationen:
+
+	  \begin{itemize}
+	  \item \textsl{Erläuterung freier Software:} \url{https://www.gnu.org/philosophy/categories.html.en}{}
+	  \item \textsl{Softwarelizenzen:} \\
+	  \url{http://www.ifross.org/lizenz-center}{}
+	  \end{itemize}
+
+      
+
+      \end{itemize}
+
+
+
+\end{frame}
+
+
+
+\end{document}

@@ -1,0 +1,185 @@
+\documentclass[13pt,a4paper,ngerman]{report}
+\usepackage[T1]{fontenc}
+\usepackage{parskip}
+\pagestyle{empty}
+\usepackage[ansinew]{inputenc}
+
+
+\usepackage{xcolor}
+\usepackage[ngerman]{babel}
+\usepackage{relsize}
+\usepackage{paralist}
+\usepackage{typearea}
+\usepackage{setspace}
+\usepackage{textcomp}
+\usepackage{layouts}
+\usepackage{amsmath}
+\usepackage{fancybox}
+\usepackage{pifont} 
+
+\definecolor{dunkelgrau.80}{gray}{0.20}
+\definecolor{dunkelgrau.60}{gray}{0.40}
+%\definecolor{Dschungelgrün}{cmyk}{0.99,0,0.52,0.2}
+\definecolor{midblue}{rgb}{0.173,0.212,0.597}
+
+
+\usepackage[top=10mm,bottom=10mm]{geometry}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+
+
+%%%-----------------------------------------------------------------------
+\begin{document}
+
+
+
+ 
+ 	\begin{flushright}
+ 			{\small \textcolor{dunkelgrau.60}{Research question\\
+ 							\emph{Pascal Bernhard}\\
+ 							Vergleichende Energie- \& Umweltpolitik\\
+ 							\emph{Dr. Miranda Schreuers; Dr. Helmut Weidner}}}
+ 	\end{flushright}						
+
+	
+	\vspace{1.2cm}
+
+
+	\begin{center}
+			{\shadowbox{\textbf{Research Design \texttwelveudash {} 
+			 Energy Policy in Europe }}}
+	\end{center} 	
+
+	
+	\vspace{1.2cm}
+	 
+		
+		\begin{itemize}
+		
+			\item{\textcolor{midblue}{\textbf{\textsl{Research Question: Is it only the 					 member states that determine the degree of integration in the area of 						 energy policy?}}}}
+ 
+ 			\begin{itemize}
+ 				\item{Application of \textbf{Intergovernmentalism} and 											 \textbf{Institutionalism} to the process of integration in the 							 European Union}
+ 			
+ 				\item{\textsl{Why is the question relevant?}}
+ 				
+ 					\begin{itemize}
+ 					
+ 					\item{\textcolor{dunkelgrau.60}{Security of energy supply has  									  become an important international issue}}
+ 					\item{\textcolor{dunkelgrau.60}{Disputes between Ukraine and Russia 							  have shown that action at the European level is warranted}}
+ 					
+ 					\end{itemize}
+ 					
+ 			\end{itemize}
+ 
+		\end{itemize} 
+ 
+ 
+ 		\begin{itemize}
+ 			
+ 			\item{\textcolor{midblue}{\textbf{\textsl{Theoretical Foundation}}}}
+ 				
+ 				\begin{itemize}
+ 					
+ 					\item{(liberal?) \textbf{Intergovernmentalism} as an analytical 								  framework to explain decisions about integration}
+ 					\item{Member countries are the 'Masters of the Treaties' 										  \texttwelveudash {} Opt-out option in the Treaty on the 									  European Community}
+ 					
+ 					\item{Energy supply is considered by Neo-Realists as vital to the 								  states' interests}
+ 					\item{Traditionally the energy sector is close ties with the state 							  or is even publicly owned}
+ 						
+ 						
+ 						\begin{itemize}
+ 							
+ 							\item{\textcolor{dunkelgrau.60}{Energy is crucial for the 										  economy as well as defense of a country}}
+ 							\item{\textcolor{dunkelgrau.60}{Historically energy 											  companies have always been under government control 										  \texttwelveudash {} even today there persist close 										  links e.g. EnBW, EdF, GdF (revolving door)}}
+ 										
+ 						\end{itemize}
+ 	
+ 	
+ 	\hrulefill
+ 	
+ 	\vspace{0.3cm}
+ 						
+ 					\item{\textbf{Intergovernmentalism} does not explain satisfactorily 							  integration steps \texttwelveudash {} Why would the European 								  Commission and representatives from the European Parliament 								  have travelled to Ukraine when the gas disputes broke out, if 							  it was only member state governments that determined energy 								  policy?}
+ 					\item{Certain characteristics of the energy sector, notably 									  pipelines networks call for collective action in regards to 								  ensuring supply and maintenance of infrastructure e.g. natural 						  monopolies, resource pooling to ensure sufficient investment 								  in transmission/transport infrastructure, negotiation with 								  supplier countries, which are not exactly motivated by markets 						  logic in their export strategies} 
+
+
+ 	
+ 							\begin{itemize}
+ 							
+ 								\item{\textcolor{dunkelgrau.60}{Solving cooperation 											  dilemmas (Defense against a divide\&rule --												  strategy of supplier countries)}}
+ 											
+ 								\item{\textcolor{dunkelgrau.60}{Considerable resources 											  could by pooled thus allowing even smaller, poorer 									  countries to build and maintain the infrastructure 									  needed to ensure security of supply (and to meet 											  the European Union's environmental \& efficiency 											  targets)}}
+ 								
+ 							\end{itemize}
+ 						
+ 						
+ 					\item{Other actors in the EU institutional system must not be 									  overlooked: European Commission (Agenda-Setting) and European 							  Parliament (Co-Decision -- Procedure)}
+ 					\item{Delegation of competences to the European Union bodies like 								  the Commission or regulatory agencies to formulate policy and 							  supervise the implementation of common measures \ding{234} 								  \textsl{Rational-Choice} approaches are quite appropriate to 								  analyse such situations with a \textsl{Principal-Agent} 									  relationship}
+ 		
+ 			\end{itemize}
+ 			
+ 		\end{itemize}
+ 		
+ 		
+	\vspace{0.5cm} 		
+ 		
+ 		
+ 		\fbox{\parbox[3cm]{14cm}{\textbf{\textsl{Energy policy in Europe is less and 					  less determined by member states 
+ 			  \\
+ 			  \ding{234} increasingly it is the result of negotiations between the 						  institutions European Commission, Council of Minsters and the European 					  Parliament \newline
+			  \\
+			  The integrationist preferences of the Commission and Parliament lead to 					  more delegation of powers and responsibilities to EU bodies and 							  institutions}}}}
+
+ 
+ 
+	\vspace{0.5cm} 
+ 
+ 							
+	\begin{itemize}
+		
+		
+		\item{\textcolor{midblue}{\textbf{\textsl{Dependent variables}}}}	
+			
+			\begin{itemize}
+				\item{Degree of integration in the field of energy policy}
+				\item{\textsl{operationalization: (ordinal measurement					
+							\texttwelveudash {} x-level scale):}}
+							
+					\begin{itemize}
+						\item{\textcolor{dunkelgrau.60}{Delegation of powers to European 							  institutions}}
+						\item{\textcolor{dunkelgrau.60}{Control mechanisms in order to 									  ensure proper implementation of EU legislation}}
+						\item{\textcolor{dunkelgrau.60}{Amount of community funds 										  allocated for transeuropean energy project to increase 									  supply security}}
+						\item{\textcolor{dunkelgrau.60}{Results of steps taken so far:									  \textsl{Has the degree of supply security increased?}}}
+					\end{itemize}
+					
+			\end{itemize}
+			
+		\item{\textcolor{midblue}{\textbf{\textsl{Independent variables}}}}
+		
+			\begin{itemize}
+				\item{Preferences of member states towards integrating energy policy}
+				\item{Propositions by the European Commission:\textsl{Does the 									  Commission demand more powers for the EU as time moves on?}}
+				\item{Role of the European Parliament}
+				\item{\textsl{Qualitative measurement based mainly on documents}}
+
+
+									
+				\begin{itemize}
+							
+
+					
+					\item{\textcolor{dunkelgrau.60}{\textsl{Did treaty provisions 									  relating to the allocation of competences change over time?}}}	
+					\item{\textcolor{dunkelgrau.60}{\textsl{In which direction go these 							  treaty changes?}}}				
+					\item{\textcolor{dunkelgrau.60}{\textsl{Did the EU establish any 								  independent watchdogs to monitor member state compliance with 							  EU regulation? Do these regulatory bodies have any means of 								  sanctioning non-compliant governments?}}}
+					\item{\textcolor{dunkelgrau.60}{\textsl{How much discretion in 									  agenda-setting and policy implementation do member states 								  grant the European Commission and European regulatory 									  agencies? (Word count of founding documents as a proxy for 								  measuring degree of agency discretion in addition to 										  qualitative analysis if the latter proves too time 										  consuming)}}}
+								
+				\end{itemize}
+				
+							
+			\end{itemize}
+				
+	\end{itemize} 							
+ 							
+\end{document}
